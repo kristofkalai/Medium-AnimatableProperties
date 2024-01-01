@@ -8,8 +8,8 @@
 import UIKit
 
 final class ViewController: UIViewController {
-    private let subview: UILabel = {
-        let view = UILabel()
+    private let subview: TextLabel = {
+        let view = TextLabel()
         view.translatesAutoresizingMaskIntoConstraints = false
         view.backgroundColor = .blue
         view.heightAnchor.constraint(equalToConstant: 100).isActive = true
@@ -24,8 +24,8 @@ final class ViewController: UIViewController {
         subview.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
         subview.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
 
-        subview.text = "TEST"
-        subview.textColor = .red
+        subview.text = .string("TEST")
+        subview.foregroundColor = .red
 
         DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
             self.animate()
@@ -34,7 +34,7 @@ final class ViewController: UIViewController {
 
     private func animate() {
         UIView.animate(withDuration: 3) {
-            self.subview.textColor = .green
+            self.subview.foregroundColor = .green
         }
     }
 }
