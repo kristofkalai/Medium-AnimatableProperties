@@ -8,6 +8,23 @@
 import UIKit
 
 final class TextLabel: UIView {
+    final private class TextLayer: CATextLayer {
+        override func action(forKey event: String) -> CAAction? {
+            switch event {
+            case #keyPath(foregroundColor): // 0
+                let context = action(forKey: #keyPath(backgroundColor)) as? CABasicAnimation // 1
+                guard let animation = context?.copy() as? CABasicAnimation else { return nil } // 2
+
+                animation.keyPath = event
+                animation.fromValue = presentation()?.value(forKeyPath: event) // 3
+                animation.toValue = nil
+                return animation
+            default:
+                return super.action(forKey: event)
+            }
+        }
+    }
+
     enum Text {
         case string(String)
         case attributedString(NSAttributedString)
@@ -115,7 +132,7 @@ final class TextLabel: UIView {
     }
 
     override class var layerClass: AnyClass {
-        CATextLayer.self
+        TextLayer.self
     }
 
     override var layer: CATextLayer {
