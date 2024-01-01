@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		586A75D42B42433B00F3150F /* TextLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586A75D32B42433B00F3150F /* TextLabel.swift */; };
 		586A75DA2B42441100F3150F /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586A75D92B42441100F3150F /* Extensions.swift */; };
 		586A75DC2B42443200F3150F /* GradientLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586A75DB2B42443200F3150F /* GradientLayer.swift */; };
+		586A75DE2B42445600F3150F /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586A75DD2B42445600F3150F /* GradientView.swift */; };
 		58AF5B992B423F1B0074E2B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58AF5B982B423F1B0074E2B1 /* AppDelegate.swift */; };
 		58AF5B9D2B423F1B0074E2B1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58AF5B9C2B423F1B0074E2B1 /* ViewController.swift */; };
 		58AF5BA22B423F1C0074E2B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58AF5BA12B423F1C0074E2B1 /* Assets.xcassets */; };
@@ -37,9 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		586A75D32B42433B00F3150F /* TextLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextLabel.swift; sourceTree = "<group>"; };
 		586A75D92B42441100F3150F /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		586A75DB2B42443200F3150F /* GradientLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientLayer.swift; sourceTree = "<group>"; };
+		586A75DD2B42445600F3150F /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		58AF5B952B423F1B0074E2B1 /* Medium-AnimatableProperties.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Medium-AnimatableProperties.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		58AF5B982B423F1B0074E2B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		58AF5B9C2B423F1B0074E2B1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -106,9 +106,9 @@
 				58AF5BA12B423F1C0074E2B1 /* Assets.xcassets */,
 				58AF5BA32B423F1C0074E2B1 /* LaunchScreen.storyboard */,
 				58AF5BA62B423F1C0074E2B1 /* Info.plist */,
-				586A75D32B42433B00F3150F /* TextLabel.swift */,
 				586A75D92B42441100F3150F /* Extensions.swift */,
 				586A75DB2B42443200F3150F /* GradientLayer.swift */,
+				586A75DD2B42445600F3150F /* GradientView.swift */,
 			);
 			path = "Medium-AnimatableProperties";
 			sourceTree = "<group>";
@@ -260,8 +260,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				586A75D42B42433B00F3150F /* TextLabel.swift in Sources */,
 				586A75DC2B42443200F3150F /* GradientLayer.swift in Sources */,
+				586A75DE2B42445600F3150F /* GradientView.swift in Sources */,
 				58AF5B9D2B423F1B0074E2B1 /* ViewController.swift in Sources */,
 				58AF5B992B423F1B0074E2B1 /* AppDelegate.swift in Sources */,
 				586A75DA2B42441100F3150F /* Extensions.swift in Sources */,
