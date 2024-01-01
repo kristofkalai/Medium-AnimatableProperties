@@ -1,0 +1,1 @@
+For the editing of the LaTeX document, I used [Overleaf](https://www.overleaf.com/), an online LaTeX editor. You can import the given source, and if you [change your project's compiler to be LuaLaTeX](https://www.overleaf.com/learn/how-to/Changing_compiler) (this is needed for the emojis to be working), it should give you the exact same result as you can see in the .pdf file.
